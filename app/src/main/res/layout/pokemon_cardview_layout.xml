@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_pokemon_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8sp"
+                        android:layout_weight="1"
+                        android:text="POKEMON_ID"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_pokemon_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8sp"
+                        android:layout_weight="1"
+                        android:text="POKEMON_NAME"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/tv_type_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8sp"
+                            android:text="POKEMON_TYPE_1"
+                            android:background="@color/colorPrimary"
+                            android:textStyle="bold"/>
+
+                    <TextView
+                            android:id="@+id/tv_type_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8sp"
+                            android:text="POKEMON_TYPE_2"
+                            android:background="@color/colorPrimaryDark"
+                            android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_pokemon_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8sp"
+                        android:layout_weight="1"
+                        android:text="POKEMON_DESCRIPTION"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
