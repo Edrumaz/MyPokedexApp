@@ -34,4 +34,6 @@ class MainActivity : AppCompatActivity() {
         rv_pokemon.layoutManager = LinearLayoutManager(this)
         rv_pokemon.adapter = PokemonAdapter(pokemons)
     }
+
+    // https://medium.com/@jassmel05/consume-restful-api-with-kotlin-1b9b14db3f28
 }
